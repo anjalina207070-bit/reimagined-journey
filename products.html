@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Luxe Boutique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Luxe Boutique</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link cart-btn"><i class="fas fa-shopping-bag"></i> Cart (0)</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Hero -->
+    <section class="products-hero">
+        <div class="container">
+            <h1>Our Collection</h1>
+            <p>Discover timeless pieces crafted with elegance and style</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <!-- Search and Filter Bar -->
+            <div class="filter-bar">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-controls">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="dresses">Dresses</option>
+                        <option value="blouses">Blouses</option>
+                        <option value="accessories">Accessories</option>
+                        <option value="shoes">Shoes</option>
+                    </select>
+                    <select id="priceFilter">
+                        <option value="all">All Prices</option>
+                        <option value="0-100">$0 - $100</option>
+                        <option value="100-300">$100 - $300</option>
+                        <option value="300-500">$300 - $500</option>
+                        <option value="500+">$500+</option>
+                    </select>
+                    <select id="sortFilter">
+                        <option value="default">Default</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <div class="product-item" data-id="1" data-category="dresses" data-price="299" data-name="Elegant Black Dress">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Elegant Black Dress" />
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="1" data-name="Elegant Black Dress" data-price="299">Add to Cart</button>
+                            <button class="quick-view" data-id="1">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Black Dress</h3>
+                        <p class="product-price">$299</p>
+                        <p class="product-description">A sophisticated midi dress perfect for evening events</p>
+                    </div>
+                </div>
+
+                <div class="product-item" data-id="2" data-category="blouses" data-price="189" data-name="Designer Silk Blouse">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Designer Silk Blouse" />
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="2" data-name="Designer Silk Blouse" data-price="189">Add to Cart</button>
+                            <button class="quick-view" data-id="2">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Silk Blouse</h3>
+                        <p class="product-price">$189</p>
+                        <p class="product-description">Luxurious silk blouse with elegant draping</p>
+                    </div>
+                </div>
+
+                <div class="product-item" data-id="3" data-category="accessories" data-price="450" data-name="Luxury Leather Bag">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1506629905607-45848aad20c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Luxury Leather Bag" />
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="3" data-name="Luxury Leather Bag" data-price="450">Add to Cart</button>
+                            <button class="quick-view" data-id="3">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxury Leather Bag</h3>
+                        <p class="product-price">$450</p>
+                        <p class="product-description">Handcrafted leather bag with gold hardware</p>
+                    </div>
+                </div>
+
+                <div class="product-item" data-id="4" data-category="dresses" data-price="350" data-name="Evening Gown">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1566479179829-5fc2dc69cb60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Evening Gown" />
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="4" data-name="Evening Gown" data-price="350">Add to Cart</button>
+                            <button class="quick-view" data-id="4">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Evening Gown</h3>
+                        <p class="product-price">$350</p>
+                        <p class="product-description">Stunning floor-length gown for special occasions</p>
+                    </div>
+                </div>
+
+                <div class="product-item" data-id="5" data-category="shoes" data-price="220" data-name="Designer Heels">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Designer Heels" />
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="5" data-name="Designer Heels" data-price="220">Add to Cart</button>
+                            <button class="quick-view" data-id="5">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Heels</h3>
+                        <p class="product-price">$220</p>
+                        <p class="product-description">Elegant heels with crystal embellishments</p>
+                    </div>
+                </div>
+
+                <div class="product-item" data-id="6" data-category="blouses" data-price="145" data-name="Cotton Blouse">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Cotton Blouse" />
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="6" data-name="Cotton Blouse" data-price="145">Add to Cart</button>
+                            <button class="quick-view" data-id="6">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cotton Blouse</h3>
+                        <p class="product-price">$145</p>
+                        <p class="product-description">Comfortable cotton blouse for everyday elegance</p>
+                    </div>
+                </div>
+
+                <div class="product-item" data-id="7" data-category="accessories" data-price="85" data-name="Statement Earrings">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Statement Earrings" />
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="7" data-name="Statement Earrings" data-price="85">Add to Cart</button>
+                            <button class="quick-view" data-id="7">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Statement Earrings</h3>
+                        <p class="product-price">$85</p>
+                        <p class="product-description">Bold gold earrings that make a statement</p>
+                    </div>
+                </div>
+
+                <div class="product-item" data-id="8" data-category="shoes" data-price="180" data-name="Leather Boots">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Leather Boots" />
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="8" data-name="Leather Boots" data-price="180">Add to Cart</button>
+                            <button class="quick-view" data-id="8">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Leather Boots</h3>
+                        <p class="product-price">$180</p>
+                        <p class="product-description">Classic leather ankle boots for any season</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="load-more-btn">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="" />
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <button class="add-to-cart-modal" id="modalAddToCart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

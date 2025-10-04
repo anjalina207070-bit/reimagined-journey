@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Boutique - Premium Fashion & Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Luxe Boutique</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#collection" class="nav-link">Collection</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link cart-btn"><i class="fas fa-shopping-bag"></i> Cart (0)</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Style</h1>
+            <p class="hero-subtitle">Premium fashion for the modern woman</p>
+            <button class="cta-button">Shop Collection</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Fashion Model" />
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="featured-collection" id="collection">
+        <div class="container">
+            <h2 class="section-title">Featured Collection</h2>
+            <p class="section-subtitle">Discover our handpicked selection of premium pieces</p>
+
+            <div class="collection-grid">
+                <div class="collection-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Elegant Dress" />
+                        <div class="item-overlay">
+                            <button class="add-to-cart" data-id="1" data-name="Elegant Black Dress" data-price="299">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Elegant Black Dress</h3>
+                        <p class="item-price">$299</p>
+                    </div>
+                </div>
+
+                <div class="collection-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Designer Blouse" />
+                        <div class="item-overlay">
+                            <button class="add-to-cart" data-id="2" data-name="Designer Silk Blouse" data-price="189">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Designer Silk Blouse</h3>
+                        <p class="item-price">$189</p>
+                    </div>
+                </div>
+
+                <div class="collection-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1506629905607-45848aad20c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Luxury Accessories" />
+                        <div class="item-overlay">
+                            <button class="add-to-cart" data-id="3" data-name="Luxury Leather Bag" data-price="450">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Luxury Leather Bag</h3>
+                        <p class="item-price">$450</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Luxe Boutique</h2>
+                    <p>Founded with a passion for timeless elegance and contemporary style, Luxe Boutique brings you carefully curated fashion pieces that celebrate the modern woman's confidence and grace.</p>
+                    <p>Our collection features premium materials, expert craftsmanship, and designs that transition seamlessly from day to night, work to weekend.</p>
+                    <button class="cta-button">Learn More</button>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Boutique Interior" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay in Style</h2>
+            <p>Join our newsletter for exclusive offers and fashion updates</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit Our Boutique</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Style City</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> hello@luxeboutique.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" />
+                        <input type="email" placeholder="Your Email" />
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luxe Boutique</h3>
+                    <p>Your destination for premium fashion and timeless style.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luxe Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
