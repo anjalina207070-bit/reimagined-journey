@@ -3,98 +3,97 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Maison Étoile — Boutique</title>
+  <title>Vogue Catalog – Fashion Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles/main.css" />
 </head>
-<body>
-  <header class="header">
-    <div class="container nav">
-      <a href="/index.html" class="brand">
-        <span class="brand-logo" aria-hidden="true"></span>
-        <span class="brand-name">Maison Étoile</span>
-      </a>
-      <nav class="nav-links">
-        <a href="/shop.html">Shop</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
+<body class="vogue-home">
+  <header class="vogue-header">
+    <div class="container vogue-nav">
+      <h1 class="vogue-title"><a href="/index.html">VOGUE CATALOG</a></h1>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="/index.html" class="active">Home</a></li>
+          <li><a href="/shop.html">Collections</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <div class="cta">
-        <a href="/shop.html" class="btn secondary">Explore</a>
-        <button class="btn" aria-label="Cart">Cart <span class="mono" data-cart-badge hidden>0</span></button>
-      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-card">
-        <div class="copy">
-          <div class="hero-eyebrow">New Collection</div>
-          <h1 class="hero-title">Quiet Luxury, Crafted to Endure</h1>
-          <p class="hero-subtitle">Timeless silhouettes in elevated fabrics, designed in small batches.</p>
-          <div class="hero-actions">
-            <a class="btn" href="/shop.html">Shop the Edit</a>
-            <a class="btn secondary" href="#newsletter">Get updates</a>
-          </div>
-        </div>
-        <div class="hero-media">
-          <div class="hero-badge">FW25 • Capsule 01</div>
-        </div>
-      </div>
-    </section>
+  <section class="editorial-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h2>Autumn/Winter 2025</h2>
+      <p>Discover the new era of couture—bold, expressive, and iconic.</p>
+      <a href="/shop.html" class="btn vogue-btn">View Collections</a>
+    </div>
+  </section>
 
-    <section class="section">
-      <h2 class="section-title">Featured</h2>
-      <div class="grid" data-products-grid>
-        <!-- Featured populated via static markup for homepage -->
-        <article class="card">
-          <div class="card-media" style="background: url('https://images.unsplash.com/photo-1544441893-675973e31995?q=80&w=1200&auto=format&fit=crop') center/cover, #15151b"></div>
-          <div class="card-body">
-            <div class="card-title">Aurora Silk Dress</div>
-            <div class="card-meta"><span>dresses</span><span>$189</span></div>
-            <a class="btn secondary" href="/product.html?id=dress-aurora">View</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-media" style="background: url('https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop') center/cover, #15151b"></div>
-          <div class="card-body">
-            <div class="card-title">Luna Tailored Blazer</div>
-            <div class="card-meta"><span>jackets</span><span>$220</span></div>
-            <a class="btn secondary" href="/product.html?id=blazer-luna">View</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-media" style="background: url('https://images.unsplash.com/photo-1551829142-5f75a4e7b64e?q=80&w=1200&auto=format&fit=crop') center/cover, #15151b"></div>
-          <div class="card-body">
-            <div class="card-title">Mira Mini Bag</div>
-            <div class="card-meta"><span>bags</span><span>$129</span></div>
-            <a class="btn secondary" href="/product.html?id=bag-mira">View</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="newsletter">
-      <div class="hero-card">
-        <div class="copy">
-          <h2 class="section-title">Join the list</h2>
-          <p class="hero-subtitle">Be first to know about drops and private sales.</p>
-          <form data-newsletter>
-            <input name="email" type="email" placeholder="you@example.com" style="padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:#0f0f14;color:#fff;width:min(420px,100%);" />
-            <button class="btn" style="margin-left:8px">Subscribe</button>
-          </form>
+  <main class="catalog-grid container">
+    <div class="catalog-row">
+      <div class="catalog-card card-large reveal">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="card-info">
+          <span class="badge badge-designer">Alexander McQueen</span>
+          <h3><a href="/shop.html">Regal Renaissance</a></h3>
+          <span class="badge badge-category">Women</span>
         </div>
-        <div class="hero-media"></div>
       </div>
-    </section>
+      <div class="catalog-card card-tall reveal">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1519864601405-5f7c1e7ae7b6?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="card-info">
+          <span class="badge badge-designer">Tom Ford</span>
+          <h3><a href="/shop.html">Urban Decadence</a></h3>
+          <span class="badge badge-category">Men</span>
+        </div>
+      </div>
+      <div class="catalog-card card-small reveal">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="card-info">
+          <span class="badge badge-designer">Stella McCartney</span>
+          <h3><a href="/shop.html">Eco Luxe</a></h3>
+          <span class="badge badge-category">Sustainable</span>
+        </div>
+      </div>
+    </div>
+    <div class="catalog-row">
+      <div class="catalog-card card-small reveal">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="card-info">
+          <span class="badge badge-designer">Gucci</span>
+          <h3><a href="/shop.html">Neo Romance</a></h3>
+          <span class="badge badge-category">Accessories</span>
+        </div>
+      </div>
+      <div class="catalog-card card-large reveal">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="card-info">
+          <span class="badge badge-designer">Prada</span>
+          <h3><a href="/shop.html">Minimalist Muse</a></h3>
+          <span class="badge badge-category">Men</span>
+        </div>
+      </div>
+      <div class="catalog-card card-tall reveal">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1519864601405-5f7c1e7ae7b6?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="card-info">
+          <span class="badge badge-designer">Versace</span>
+          <h3><a href="/shop.html">Electric Glam</a></h3>
+          <span class="badge badge-category">Women</span>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer class="footer">
+  <footer class="vogue-footer">
     <div class="container">
-      <div>&copy; <span id="year"></span> Maison Étoile. All rights reserved.</div>
+      <p>&copy; <span id="year"></span> Vogue Catalog by Fashion Studio. All rights reserved.</p>
     </div>
   </footer>
 
