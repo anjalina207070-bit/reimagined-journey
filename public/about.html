@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Maison Étoile</title>
+  <link href="/assets/styles/main.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="/index.html" class="brand">
+        <span class="brand-logo"></span>
+        <span class="brand-name">Maison Étoile</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/shop.html">Shop</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <div class="cta">
+        <a href="/shop.html" class="btn secondary">Explore</a>
+        <button class="btn">Cart <span class="mono" data-cart-badge hidden>0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="hero-card" style="margin-bottom:18px;">
+      <div class="copy">
+        <h1 class="hero-title">Our Philosophy</h1>
+        <p class="hero-subtitle">Maison Étoile is a female-founded studio crafting refined essentials in conscious materials. We produce in small batches with pattern-makers we know by name.</p>
+      </div>
+      <div class="hero-media"></div>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="card-body">
+          <div class="card-title">Conscious Materials</div>
+          <p class="muted">We prioritize natural fibers, certified dyes, and traceable supply chains.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <div class="card-title">Small-Batch Production</div>
+          <p class="muted">Limited runs reduce waste and ensure attention to detail in every piece.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <div class="card-title">Timeless Design</div>
+          <p class="muted">Elevated silhouettes built to outlast trends and seasons.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>&copy; <span id="year"></span> Maison Étoile.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/assets/scripts/main.js" defer></script>
+</body>
+</html>

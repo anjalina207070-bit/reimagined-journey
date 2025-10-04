@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maison Étoile — Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/main.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="/index.html" class="brand">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span class="brand-name">Maison Étoile</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/shop.html">Shop</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <div class="cta">
+        <a href="/shop.html" class="btn secondary">Explore</a>
+        <button class="btn" aria-label="Cart">Cart <span class="mono" data-cart-badge hidden>0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="copy">
+          <div class="hero-eyebrow">New Collection</div>
+          <h1 class="hero-title">Quiet Luxury, Crafted to Endure</h1>
+          <p class="hero-subtitle">Timeless silhouettes in elevated fabrics, designed in small batches.</p>
+          <div class="hero-actions">
+            <a class="btn" href="/shop.html">Shop the Edit</a>
+            <a class="btn secondary" href="#newsletter">Get updates</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-badge">FW25 • Capsule 01</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Featured</h2>
+      <div class="grid" data-products-grid>
+        <!-- Featured populated via static markup for homepage -->
+        <article class="card">
+          <div class="card-media" style="background: url('https://images.unsplash.com/photo-1544441893-675973e31995?q=80&w=1200&auto=format&fit=crop') center/cover, #15151b"></div>
+          <div class="card-body">
+            <div class="card-title">Aurora Silk Dress</div>
+            <div class="card-meta"><span>dresses</span><span>$189</span></div>
+            <a class="btn secondary" href="/product.html?id=dress-aurora">View</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media" style="background: url('https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop') center/cover, #15151b"></div>
+          <div class="card-body">
+            <div class="card-title">Luna Tailored Blazer</div>
+            <div class="card-meta"><span>jackets</span><span>$220</span></div>
+            <a class="btn secondary" href="/product.html?id=blazer-luna">View</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media" style="background: url('https://images.unsplash.com/photo-1551829142-5f75a4e7b64e?q=80&w=1200&auto=format&fit=crop') center/cover, #15151b"></div>
+          <div class="card-body">
+            <div class="card-title">Mira Mini Bag</div>
+            <div class="card-meta"><span>bags</span><span>$129</span></div>
+            <a class="btn secondary" href="/product.html?id=bag-mira">View</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="newsletter">
+      <div class="hero-card">
+        <div class="copy">
+          <h2 class="section-title">Join the list</h2>
+          <p class="hero-subtitle">Be first to know about drops and private sales.</p>
+          <form data-newsletter>
+            <input name="email" type="email" placeholder="you@example.com" style="padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:#0f0f14;color:#fff;width:min(420px,100%);" />
+            <button class="btn" style="margin-left:8px">Subscribe</button>
+          </form>
+        </div>
+        <div class="hero-media"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>&copy; <span id="year"></span> Maison Étoile. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/assets/scripts/main.js" defer></script>
+</body>
+</html>
