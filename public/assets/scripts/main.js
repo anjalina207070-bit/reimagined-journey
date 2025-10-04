@@ -35,9 +35,40 @@ const Site = (() => {
     updateCartBadge();
   }
 
+  function initReveal() {
+    const items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || items.length === 0) {
+      items.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.15 });
+    items.forEach(el => io.observe(el));
+  }
+
+  function initMobileNav() {
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.vogue-header nav ul');
+    if (!toggle || !menu) return;
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('open');
+      menu.setAttribute('aria-expanded', String(!expanded));
+    });
+  }
+
   function init() {
     updateCartBadge();
     initNewsletter();
+    initReveal();
+    initMobileNav();
     document.addEventListener('click', (e) => {
       const addBtn = e.target.closest('[data-add-to-cart]');
       if (addBtn) {
